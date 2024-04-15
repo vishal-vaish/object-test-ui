@@ -1,0 +1,54 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; 
+}
+
+.background-image {
+  position: absolute; 
+   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.boxContainer {
+  z-index: 1;
+  display: flex;
+  gap: 3rem;
+}
+
+.box {
+  padding: 1rem;
+  min-width: 12rem;
+  min-height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.boxHeader {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: gray;
+  padding-bottom: 0.5rem;
+}
+
+.boxBody {
+  font-size: 1.2rem;
+}
+
+.LiveContainer{
+  position: absolute;
+  top:0;
+  width: 100px;
+  right: 2rem;
+}
