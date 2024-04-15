@@ -19,13 +19,13 @@
 .boxContainer {
   z-index: 1;
   display: flex;
-  gap: 3rem;
+  gap: 8rem;
 }
 
 .box {
   padding: 1rem;
-  min-width: 12rem;
-  min-height: 7rem;
+  min-width: 15rem;
+  min-height: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,13 +37,13 @@
 
 .boxHeader {
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: gray;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .boxBody {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .LiveContainer{

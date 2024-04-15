@@ -27,7 +27,6 @@ function App() {
       };
 
       const onWebSocketClose = () => {
-        console.error('Connection closed to ws://192.168.1.10:8080/live-object-count');
         setIsConnected(false);
         setTimeout(connectToWebSocket, 5000); 
       };
@@ -53,17 +52,7 @@ function App() {
     };
 
     connectToWebSocket();
-
   }, []);
-
-  useEffect(() => {
-    console.log(isConnected);
-
-  },[isConnected])
-
-  useEffect(() => {
-    console.log(greetings.count);
-  }, [greetings])
 
   return (
     <div className="app">
@@ -79,12 +68,11 @@ function App() {
         </div>
         <div className="box">
           <div className='boxHeader'>Count</div>
-          <div className='boxBody'>{greetings.count ? greetings.count : "N/A"}</div>
+          <div className='boxBody'>{greetings.count != null ? greetings.count : "N/A"}</div>
         </div>
       </div>
     </div>
   );
-
 }
 
 export default App;
